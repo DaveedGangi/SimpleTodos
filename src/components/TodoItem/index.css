@@ -7,12 +7,29 @@
   justify-content: space-between;
   margin: 3px;
   padding: 4px;
+  align-items: center;
 }
 .eachTodo {
   font-size: 12px;
   padding-right: 14px;
   padding-left: 2px;
 }
+.textDecorate {
+  font-size: 12px;
+  padding-right: 14px;
+  padding-left: 2px;
+  text-decoration: line-through;
+}
+
+.inputUser {
+  @media screen and (max-width: 767px) {
+    width: 100px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 240px;
+  }
+}
+
 .deleteButton {
   border: 1px solid #ff0b37;
   border-radius: 8px;
@@ -21,6 +38,47 @@
   width: 70px;
 
   height: 25px;
+  margin-right: 12px;
+  cursor: pointer;
+  margin-left: 4px;
+
+  @media (max-width: 767px) {
+    width: 55px;
+    height: 23px;
+  }
+}
+
+.Save {
+  background-color: darkblue;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 8px;
+  width: 88px;
+  height: 44px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    width: 55px;
+    height: 23px;
+  }
+}
+.Edit {
+  background-color: #ff0b37;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 8px;
+  width: 88px;
+  height: 44px;
+  cursor: pointer;
+
+  @media (max-width: 767px) {
+    width: 55px;
+    height: 23px;
+  }
+}
+.ForButton {
+  display: flex;
+  align-items: center;
 }
 
 @media (min-width: 768px) {
